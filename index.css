@@ -20,6 +20,11 @@ p {
 	text-align: center;
 }
 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
 .navbar a.right {
 	float: right;
 }
@@ -30,8 +35,12 @@ p {
 	color: black;
 }
 
+
 .footer {
-	padding: 20px
+	padding: 20px;
+	background-color: 25px;
+}
+
 
 /* Responsive design */
 @media screen and (max-width: 700px) {
