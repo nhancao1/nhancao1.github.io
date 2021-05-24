@@ -30,18 +30,6 @@ p {
 	color: black;
 }
 
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.side [
-	-ms-flex: 30%;
-	flex: 30%;
-	padding: 20px;
-}
-
 .footer {
 	padding: 20px
 
