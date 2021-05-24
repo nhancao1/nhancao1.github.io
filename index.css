@@ -25,10 +25,6 @@ p {
 	border-radius: 0;
 }
 
-.navbar a.right {
-	float: right;
-}
-
 
 .navbar a:hover {
 	background-color: #ddd;
