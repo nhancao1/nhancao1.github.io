@@ -3,6 +3,9 @@ p {
 	font-size: 15px;
 }
 
+* {
+	box-sizing: border-box;
+
 .header {
 	padding: 60px;
 	text-align: center;
@@ -14,7 +17,7 @@ p {
 	font-size: 40px;
 }
 
-.navbar a{
+.navbar a {
 	float: left;
 	display: block;
 	text-align: center;
@@ -57,4 +60,3 @@ p {
 	text-decoration: none;
 	font-size: 17px;
 }
-
