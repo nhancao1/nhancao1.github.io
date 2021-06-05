@@ -87,7 +87,7 @@ navigation links stack on top of each other instead of next to each other */
   display: none;
   position: fixed;
   bottom: 30px;
-  right: 20px;
+  right: 25px;
   z-index: 99;
   border: none;
   background-color: green;
