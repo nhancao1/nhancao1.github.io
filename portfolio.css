@@ -83,7 +83,9 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  font-size: 25px;
+  color: black;
+  font-family: serif;
 }
 
 .tooltip .tooltiptext {
