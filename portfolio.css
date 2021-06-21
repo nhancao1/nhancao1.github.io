@@ -83,43 +83,25 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  font-size: 15px;
-  color: black;
-  font-family: serif;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px black;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #555;
+  background-color: black;
   color: #fff;
-  text-align: right;
-  border-radius: 6px;
+  text-align: center;
   padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  bottom: 1200%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  /* Position the tooltip */
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-  z-index: 1;
+  top: -5px;
+  left: 105%;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  opacity: 1;
 }
