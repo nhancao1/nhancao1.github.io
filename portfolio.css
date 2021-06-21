@@ -99,11 +99,11 @@ body {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 120%;
+  bottom: 1200%;
   left: 50%;
   margin-left: -60px;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.4s;
 }
 
 .tooltip .tooltiptext::after {
