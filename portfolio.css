@@ -127,3 +127,14 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+/* Selection */
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: lightblue;
+}
+
+::selection {
+  color: black;
+  background: lightblue;
+}
