@@ -84,3 +84,14 @@ h3 {
   font-family: sans-serif;
   font-size: 25px;
 }
+
+/* Selection */
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: lightblue;
+}
+
+::selection {
+  color: black;
+  background: lightblue;
+}
