@@ -69,17 +69,10 @@ body {
   padding: 20px;
   font-weight: 300;
   display: flex;
-  justify-contact: space-evenly;
   text-align: center;
   background: #ddd;
 }
 
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
