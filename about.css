@@ -74,14 +74,6 @@ body {
   background: #ddd;
 }
 
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
 @media (max-width: 28.75em) {
   footer {
     flex-direction: column;
@@ -133,18 +125,10 @@ h3 {
   padding: 0 2rem;
 }
 
-.contact-section-header > h2 {
-  font-size: 6rem;
-}
-
 @media (max-width: 28.75em) {
   .ontact-section-header > h2 {
     font-size: 4rem;
   }
-}
-
-.contact-section-header > p {
-  font-style: italic;
 }
 
 .contact-links {
@@ -165,3 +149,4 @@ h3 {
 .contact-details:hover { 
   transform: translateY(8px);
 }
+ 
