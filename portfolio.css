@@ -68,7 +68,6 @@ body {
 .footer {
   padding: 20px;
   font-weight: 300;
-  display: flex;
   text-align: center;
   background: #ddd;
 }
