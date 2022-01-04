@@ -140,6 +140,14 @@ h3 {
 }
 
 /* Projects section */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px var(--primary shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
