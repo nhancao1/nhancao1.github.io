@@ -2,14 +2,26 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
 /* Variables */
 :root {
-  --primary-color: 347556df;
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
   --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+/* Variables end */
+
 
 /* Style the body */
 body {
@@ -149,24 +161,22 @@ h3 {
 }
 
 /* Projects section */
-.project-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px var(--primary shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
 
-.project-container {
+.projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
 }
 
 .projects-title {
