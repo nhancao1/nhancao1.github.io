@@ -226,7 +226,7 @@ h3 {
   margin-bottom: var(--bottom-margin);
 }
 
-.project-card {
+#project-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
