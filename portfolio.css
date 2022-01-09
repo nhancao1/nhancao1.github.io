@@ -210,3 +210,12 @@ h3 {
   padding: 20px;
   margin: 10px;
 }
+
+#project {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+#project:hover {
+  color: var(--secondary-color);
+}
