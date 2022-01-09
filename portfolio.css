@@ -211,11 +211,11 @@ h3 {
   margin: 10px;
 }
 
-#project {
+#project a{
   text-decoration: none;
   color: var(--primary-color);
 }
 
-#project:hover {
+#project a:over {
   color: var(--secondary-color);
 }
