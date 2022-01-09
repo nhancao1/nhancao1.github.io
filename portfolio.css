@@ -20,7 +20,6 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables end */
 
 
 /* Style the body */
@@ -36,8 +35,6 @@ body {
   background: #48D1CC;
   color: white;
 }
-
-/* Variables end */
 
 html {
   scroll-behavior: smooth;
