@@ -52,16 +52,6 @@ ul {
   list-style-type: none;
 }
 
-.project a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.project a:hover {
-  color: var(--secondary-color);
-}
-
-
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
