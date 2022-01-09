@@ -216,6 +216,6 @@ h3 {
   color: var(--primary-color);
 }
 
-#project a:over {
+#project a:hover {
   color: var(--secondary-color);
 }
