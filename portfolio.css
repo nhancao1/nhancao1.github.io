@@ -52,12 +52,12 @@ ul {
   list-style-type: none;
 }
 
-a {
+.project {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-a:hover {
+.project:hover {
   color: var(--secondary-color);
 }
 
