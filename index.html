@@ -6,6 +6,8 @@
     <title>Home | Nhan Cao's Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="scripts.js" defer></script>
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -28,8 +30,9 @@
     <div class="skills-section">
         <div class="school">
             <h3>Programming Languages and Technical Skills</h3>
-            <span class="toggle-btn" data-skill-type="technical">Show Technical Skills</span>
-            <ul class="skills technical">
+            <span class="toggle-btn" onclick="toggleSkills('technical')"><i class="fas fa-angle-down"></i></span>
+            <ul class="skills technical hidden">
+                <!-- Technical skills content here -->
                 <li>Programming: C/C++, Python, Arduino, Data Visualization, MS Excel, Visual Basic 6</li>
                 <li>Data Science: Artificial Intelligence, Machine Learning</li>
                 <li>Web: HTML5, CSS3, JavaScript, AJAX</li>
@@ -50,8 +53,9 @@
         
         <div class="communication">
             <h3>Communication Skills</h3>
-            <span class="toggle-btn" data-skill-type="communication">Show Communication Skills</span>
-            <ul class="skills communication">
+            <span class="toggle-btn" onclick="toggleSkills('communication')"><i class="fas fa-angle-down"></i></span>
+            <ul class="skills communication hidden">
+                <!-- Communication skills content here -->
                 <li>Communicated well as an advanced English and intermediate French speaker being able to give a presentation in French on a UN Nobel Prize winner</li>
                 <li>Collaborated with team members on a web development project by attending meetings and emailing team members which helped develop effective communication skills to stay on track </li>
                 <li>Researched a topic and successfully summarized findings in a report on users and mobile services in post-secondary academic libraries with classmates on a group conference poster</li>
@@ -59,7 +63,7 @@
             </ul>
         </div>
     </div>
- 
+
     <!-- Footer Section -->
     <footer class="footer">
         <section id="contact" class="contact-section">
