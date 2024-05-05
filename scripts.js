@@ -1,5 +1,5 @@
 function toggleSkills(skillType) {
-    var skills = document.querySelector('.skills.' + skillType);
+    var skills = document.querySelector('.' + skillType);
     var toggleBtn = skills.previousElementSibling;
 
     skills.classList.toggle('hidden');
