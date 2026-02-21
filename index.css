@@ -5,58 +5,84 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
+/* Base styles */
+:root{
+  --bg:#f7f7f7;
+  --accent-1:#004d7a;
+  --accent-2:#008793;
+  --accent-3:#00bf72;
+  --dark:#333;
+  --muted:#ddd;
+  --text:#222;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
 }
 
 /* Header */
 .header {
-  padding: 60px;
+  padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #004d7a, #008793, #00bf72);
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
   color: white;
-  border-bottom: 5px solid #00bf72;
+  border-bottom: 5px solid var(--accent-3);
 }
 
 .header h1 {
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .header p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  opacity: 0.9;
+  opacity: 0.95;
+  max-width: 900px;
+  margin: 0.25rem auto 0;
 }
 
-/* Navbar */
+/* Navbar (flexbox, accessible) */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 6px 12px;
+}
+
+.navbar .nav {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .navbar a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 10px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
-.navbar a:hover {
-  background-color: #ddd;
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:focus-visible {
+  background-color: var(--muted);
   color: black;
+  outline: none;
 }
 
 .navbar a.active {
@@ -88,9 +114,19 @@ body {
   display: block;
   margin: 20px auto;
   border-radius: 50%;
+  max-width: 200px;
+  height: auto;
 }
 
-ul li {
+/* Scope list styles to content to avoid global overrides */
+.content ul,
+.education ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.25rem;
+}
+
+.content ul li,
+.education ul li {
   margin-bottom: 10px;
 }
 
@@ -99,12 +135,13 @@ ul li {
   padding: 20px;
   font-weight: 300;
   text-align: center;
-  background: #ddd;
+  background: var(--muted);
   margin-top: 40px;
 }
 
+.footer p,
 footer p {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 /* Contact Section */
@@ -115,7 +152,7 @@ footer p {
   align-items: center;
   text-align: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .contact-links {
@@ -123,37 +160,20 @@ footer p {
   justify-content: center;
   width: 100%;
   max-width: 900px;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .contact-details {
-  font-size: 20px;
-  transition: transform 0.3s ease-out;
-  margin: 0 1rem;
+  font-size: 18px;
+  transition: transform 0.2s ease-out;
+  margin: 0 0.5rem;
 }
 
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-/* Media Query for small screens */
-@media (max-width: 700px) {
-  h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  ul li {
-    font-size: 16px;
-  }
-
-  .content {
-    padding: 30px 10px;
-  }
+.contact-details:hover,
+.contact-details:focus {
+  transform: translateY(-4px);
 }
 
 /* Education Section */
@@ -162,17 +182,17 @@ footer p {
   margin: 50px auto;
   max-width: 800px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #fafafa;
 }
 
 .education h3 {
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   color: #333;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
 }
 
 .education ul {
@@ -180,9 +200,36 @@ footer p {
   list-style-position: outside;
   padding-left: 40px;
   font-size: 18px;
-  line-height: 2.2;
+  line-height: 1.8;
 }
 
 .education ul li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
+
+/* Media Query for small screens */
+@media (max-width: 700px) {
+  .header { padding: 36px 16px; }
+  .header h1 { font-size: 28px; }
+  .header p { font-size: 15px; }
+
+  .content { padding: 20px 12px; }
+  .content h2 { font-size: 26px; }
+  .content h3 { font-size: 20px; }
+
+  .navbar { padding: 8px 10px; }
+  .navbar a { padding: 8px 10px; font-size: 15px; }
+
+  .contact-links { flex-direction: column; gap: 0.75rem; }
+
+  .education { margin: 24px 12px; padding: 16px; }
+}
+
+/* Small tweaks for very small devices */
+@media (max-width: 420px) {
+  .header h1 { font-size: 22px; }
+  .content img { max-width: 140px; }
+  .navbar a { padding: 8px 8px; }
+}
+
+/* End of file */
